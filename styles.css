@@ -1,5 +1,7 @@
-body{
+body ,ul{
     background-color: rgba(151, 71, 147, 0.877);
+    margin:0;
+    padding: 0;
 }
 
 header{
@@ -7,6 +9,11 @@ header{
     padding: 10px;
     height: 100px;
     background-color: black;
+}
+
+.foto_inicio{
+    height: 100px;
+    width: 160px;
 }
 
 .navegacion-barra{
@@ -46,6 +53,7 @@ li{
     text-decoration: rgb(106, 84, 228);
     border: groove;
     border-color: cornflowerblue;
+    border-radius: 30px;
     align-items: center;
     padding: 10px;
 }
@@ -62,21 +70,28 @@ main{
     color: rgb(7, 245, 233);
 }
 
+.boton-menu{
+    display: none;
+}
+
 @media (max-width: 768px){
     .column{
         flex:100%;
+        align-items: center;
     }
 
     .links{
         display: none;
     }
 
-    .button-menu-toggle {
+    .boton-menu{
         display: block;
-        background-color: white;
-        border:none;
+        background-color: rgb(26, 18, 18);
+        border:groove;
+        border-color: aqua;
         border-radius: 50px;
         padding: 0 24px;
+        color:antiquewhite;
         font-family: monospace;
         font-weight: bold;
         font-size: 20px;
@@ -88,12 +103,18 @@ main{
         background-color: rgba(20,20,20,0.95);
         width: 100%;
         height: 100%;
-        top: 70px;
+        top: 120px;
         left: 0;
         flex-direction: column;
         padding-top: 200px;
         align-items: center;
         gap:70px;
-        font-size: 40px;
+    }
+
+    .container-img{
+        display: flex;
+        flex-direction: column;
+        border: groove;
+        border-color: rgb(3, 234, 241);
     }
 }
