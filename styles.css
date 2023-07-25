@@ -115,6 +115,6 @@ main{
         display: flex;
         flex-direction: column;
         border: groove;
-        border-color: rgb(3, 234, 241);
+        border-color: qrgb(3, 234, 241);
     }
 }
